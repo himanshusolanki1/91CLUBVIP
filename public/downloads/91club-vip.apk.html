@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>91 Club VIP App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a104d, #4a1b7a);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            background: linear-gradient(90deg, #6a3de8, #9c27b0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .message {
+            margin-bottom: 30px;
+            line-height: 1.5;
+            color: #bebef0;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #3de878, #18b15e);
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .btn-alt {
+            background: linear-gradient(90deg, #6a3de8, #4a1b7a);
+        }
+        .app-preview {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+        .screen {
+            width: 250px;
+            height: 450px;
+            background-color: #121212;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 8px solid #333;
+        }
+        .screen-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a104d, #4a1b7a);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+        }
+        .app-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #6a3de8, #9c27b0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .app-input {
+            width: 80%;
+            padding: 12px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-align: center;
+        }
+        .app-btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #3de878, #18b15e);
+            color: white;
+            font-weight: bold;
+        }
+        .result-box {
+            margin-top: 30px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #e83d3d, #b1185e);
+            border-radius: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+        .note {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            font-size: 12px;
+            color: #bebef0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>91 Club VIP App</h1>
+        <p class="message">
+            This is a preview of the 91 Club VIP Android app. In the real app, you'll be able to access exclusive VIP predictions using the same algorithm as our website.
+        </p>
+        
+        <div class="app-preview">
+            <div class="screen">
+                <div class="screen-content">
+                    <div class="app-logo">91 Club VIP</div>
+                    <p style="color: #bebef0; font-size: 14px; text-align: center;">Enter period number for prediction</p>
+                    
+                    <input type="text" class="app-input" placeholder="Period number" value="202403182">
+                    <button class="app-btn">GET RESULT</button>
+                    
+                    <div class="result-box">
+                        BIG
+                    </div>
+                    
+                    <div class="note">
+                        For VIP members only<br>
+                        Passkey: prediction91vip
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="message">
+            To build the actual APK, please provide the source code to your Android developer. The complete React Native source code is available in the /mobile-app directory.
+        </p>
+        
+        <a href="/downloads/README.txt" class="btn">Download README</a>
+        <a href="/" class="btn btn-alt">Return to Website</a>
+    </div>
+</body>
+</html> 
